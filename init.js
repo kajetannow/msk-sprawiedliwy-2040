@@ -11,4 +11,3 @@ langBtns.forEach((langBtn)=>{
         translator.load(newLang);
     })
 })
-

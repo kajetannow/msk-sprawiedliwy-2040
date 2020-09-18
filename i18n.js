@@ -13,7 +13,11 @@ function createNode(el){
 }
 
 async function fetchTranslation(lang){
-fetch(`data/${lang}.json`, {mode: 'no-cors'})
+let dir = '';
+if(window.location.hostname == "kajetannow.github.io")
+    dir = "msk-sprawiedliwy-2040/";
+    
+fetch(`${dir}data/${lang}.json`, {mode: 'no-cors'})
     .then(response=>response.json())
     .then(res=>data=setTranslation(res))
     .catch(err=>console.error(err))
