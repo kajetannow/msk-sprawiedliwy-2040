@@ -14,7 +14,7 @@ class Translator {
         if (lang) {
           this._lang = lang;
         }
-          fetch(`/data/${this._lang}.json`)
+          fetch(`./data/${this._lang}.json`)
                 .then((res) => res.json())
                 .then((translation) => {
                     this.translate(translation);
