@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/animations.css">
+    
+    <title data-i18n="siteTitle">SPRAWIEDLIWY 2040</title>
+</head>
+<body>
+    <header>
+        <button class="menu-btn" id="open-menu-btn">
+            <img src="icons/menu.svg" />
+        </button>
+        <h1 class="logo">
+            <a to="/#manifesto" data-i18n="siteTitle">Sprawiedliwy 2040</a>
+        </h1>
+    </header>
+    <nav class="menu menu-closed">
+        <button class="menu-btn" id="close-menu-btn">
+            <img src="icons/arrow_back.svg" />
+        </button>
+        <ul>
+            <li><a href=""></a></li>
+        </ul>
+        <div class="lang-container">
+            <button class="lang-btn" data-lang="en">en</button>
+            <button class="lang-btn" data-lang="pl">pl</button>
+        </div>
+    </nav>
+    <main>
+        <section class="manifesto-section" id="manifesto">
+            <h2 data-i18n="manifesto.title"></h2>
+            <div data-i18n="manifesto.content"></div>
+        </section>
+            <section class="slogans-section" id="slogans" data-i18n="slogans" data-i18n-for-tag="h2">
+                
+            </section>
+        
+        <section class="values-section" id="values" >
+            <h1 data-i18n="values.title">Wartości</h1>
+            <div data-i18n="values.content"></div>
+        </section>
+                    
+        <section class="stories-section" id="stories">
+            <h1 data-i18n="stories.title">Historie</h1>
+            <div data-i18n="stories.content"></div>
+        </section>
+
+        <section class="goals-section" id="goals" >
+            <h1 data-i18n="goals.title">Cele</h1>
+            <div data-i18n="goals.content"></div>
+            </section>
+
+        <section class="about-section" id="about" >
+            <h1 data-i18n="about.title" >O nas</h1>
+            <div data-i18n="about.content">
+            <p>Jesteśmy ruchem społecznym będącym częścią globalnej inicjatywy Fridays for Future.</p>
+            <p>Działając, wyrażamy swój sprzeciw wobec bierności polityków w obliczu katastrofy klimatycznej. Nie jesteśmy ekspertami ds. ekologii i zmian klimatu, lecz młodzieżą świadomą zagrożenia jakim jest katastrofa klimatyczna i walczącą o prawo do swojej przyszłości.</p>
+            <p>Zaczynaliśmy jako grupa licealistów zainspirowanych działalnością Grety Thunberg, których aktywność szybko przerodziła się w ogólnopolski ruch.</p>
+            <p>Nasi członkowie to gimnazjaliści, licealiści i studenci.  Uczymy  się z myślą o przyszłości, którą kryzys klimatyczny stawia pod znakiem zapytania.</p>
+            <p>Dlatego protestujemy, wypowiadamy się w mediach, rozmawiamy z politykami i organizujemy edukację o zmianach klimatu.</p>
+            <p>​Jeśli chcesz ratować świat razem z nami, napisz do nasz na facebooku, poniżej znajdziesz listę miast w których działa MSK, klikając w daną nazwę przejdziecie do fanpage'u danego miasta :))</p>
+        </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <h1>Kontakt</h1>
+            <p>insta: @msk.poznan</p>
+            <p>fb: @msk.poznan</p>
+        </section>
+</main>
+<script type="module" src="init.js"></script>
+<script type="module" src="menu.js"></script>
+</body>
+</html>

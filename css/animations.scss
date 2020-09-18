@@ -1,0 +1,35 @@
+.menu-closed{
+    left: -100vw;
+    transition: left 400ms cubic-bezier(.24,.51,.47,.98);
+}
+.menu-opened{
+    left: 0;
+    transition: left 400ms cubic-bezier(.24,.51,.47,.98);
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.loading{
+    animation: fadeIn 0.5s ease-in-out infinite alternate;
+}
+section{
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+// LAPTOPS & DESKTOPS
+@media (min-width: 992px){
+    .menu-closed{
+        left: -100vw;
+        transition: left 700ms ease-in;
+    }
+    .menu-opened{
+        left: 0;
+        transition: left 700ms ease-in;
+    }
+}
