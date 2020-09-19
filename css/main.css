@@ -15,6 +15,11 @@ body {
   color: #8C51A5;
 }
 
+.wrapper {
+  overflow-x: hidden;
+  width: 100vw;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Bungee", "Impact", sans-serif;
   line-height: 165%;
@@ -29,7 +34,7 @@ p {
   margin-bottom: 1.266em;
 }
 
-h1 {
+h1, .menu ul a {
   margin-top: 0;
   font-size: 1.802em;
 }
@@ -73,8 +78,15 @@ header {
 .menu-btn {
   background-color: inherit;
   color: #8C51A5;
+  height: 1.802em;
   border: none;
-  padding: 1em;
+  margin: auto 1em;
+  outline: none;
+}
+
+.menu-btn img {
+  width: auto;
+  height: 1.802em;
 }
 
 .menu-btn:active {
@@ -173,12 +185,15 @@ section h1 {
 
 .story-container {
   margin-bottom: 1em;
+  max-width: 85vw;
 }
 
 .story-container h2 {
   width: 100vw;
   left: -7.5vw;
   position: relative;
+  width: 85vw;
+  word-wrap: break-word;
   background-color: #8C51A5;
   color: #FFFFFF;
   padding-left: 7.5vw;
@@ -244,6 +259,11 @@ footer {
   padding: 0 7.5vw 0 5vw;
 }
 
+.menu .menu-btn {
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
 .menu ul {
   list-style: none;
   text-align: left;
@@ -252,8 +272,9 @@ footer {
   padding-bottom: 5vh;
 }
 
-.menu ul h1 {
+.menu ul a {
   padding: 0.5em 0;
+  font-family: "Bungee", "Impact", sans-serif;
 }
 
 a {

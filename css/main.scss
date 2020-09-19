@@ -29,6 +29,11 @@ body{
     color: $light-violet;
 }
 
+.wrapper{
+    overflow-x: hidden;
+    width: 100vw;
+}
+
 h1,h2,h3,h4,h5,h6{
     font-family: $font-major;
     line-height: 165%;
@@ -42,7 +47,7 @@ p{
     margin-bottom: 1.266em;
 }
 
-h1 {
+h1, .menu ul a{
     margin-top: 0;
     font-size: 1.802em;
   }
@@ -78,8 +83,14 @@ header{
 .menu-btn{
     background-color: inherit;
     color: $light-violet;
+    height: 1.802em;
     border: none;
-    padding: 1em;
+    margin: auto 1em;
+    outline:none;
+    img{
+    width: auto;
+    height: 1.802em;
+    }
     &:active{
         border: none;
     }
@@ -169,8 +180,11 @@ section{
 
 .story-container{
     margin-bottom: 1em;
+    max-width: 85vw;
     h2{
         @include fullscreenPatch();
+        width: 85vw;
+        word-wrap:break-word;
         background-color: $light-violet;
         color: $white;
         padding-left: 7.5vw;
@@ -229,14 +243,19 @@ footer{
     top: 0;
     left: 0;
     padding: 0 7.5vw 0 5vw;
+    .menu-btn{
+        margin-top:2em;
+        margin-bottom:1em;
+    }
     ul{
         list-style: none;
         text-align: left;
         padding: 0;
         padding-left: 2.5vw;
         padding-bottom: 5vh;
-        h1{
+        a{
             padding: 0.5em 0;
+            font-family: $font-major;
         }
     }
 }
