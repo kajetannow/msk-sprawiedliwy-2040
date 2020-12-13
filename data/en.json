@@ -1,16 +1,16 @@
 {
     "siteTitle": "FAIR 2040",
     "menu": {
-        "manifesto": "manifesto",
+        "start": "start",
         "slogans": "slogans",
         "values": "values",
         "stories": "stories",
-        "goals": "goals",
+        "demands": "demands",
         "about": "about us",
         "contact": "contact"
     },
-    "manifesto": {
-        "title": "Manifesto",
+    "start": {
+        "title": "start",
         "content":
             "<p>(in english)Litwo! Ojczyzno moja! Ty jesteś jak zdrowie, Ile cię trzeba cenić, ten tylko się dowie, Kto cię stracił. Dziś piękność twą w całej ozdobie Widzę i opisuję, bo tęsknię po tobie</p><p>Panno święta, co Jasnej bronisz Częstochowy I w Ostrej świecisz Bramie! Ty, co gród zamkowy Nowogródzki ochraniasz z jego wiernym ludem! Jak mnie dziecko do zdrowia powróciłaś cudem,</p>"
     },
@@ -39,8 +39,8 @@
             "<h2>Wartość 2</h2><p>opis wartości 2</p>"
         ]
     },
-    "goals":{
-        "title": "Goals",
+    "demands":{
+        "title": "demands",
         "content": [
            "<h2>Cela 1</h2><p>Wsadź żart z Leszka Milera</p>",
            "<h2>Cela 2</h2><p>Wsadź żart z Leszka Milera</p>"

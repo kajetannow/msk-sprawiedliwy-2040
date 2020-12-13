@@ -21,8 +21,12 @@
   animation: fadeIn 0.5s ease-in-out infinite alternate;
 }
 
-section {
+section, header {
   animation: fadeIn 0.3s ease-in-out;
+}
+
+header {
+  animation: fadeIn 0.3s ease-in-out 0.3s;
 }
 
 @media (min-width: 992px) {

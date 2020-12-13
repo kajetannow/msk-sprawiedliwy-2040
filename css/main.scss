@@ -1,5 +1,6 @@
 $font-major: 'Bungee', 'Impact', sans-serif;
 $font-minor: 'Source Sans Pro', 'Segoe UI', sans-serif;
+$black: #000000;
 $dark-violet: #36034D;
 $light-violet: #8C51A5;
 $orange: #DCA414;
@@ -129,48 +130,101 @@ header{
 }
 
 main{
-    margin-top: 10vh;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
+//SECTIONS
 section{
     padding: 5vh 7.5vw;
     padding-top: 0;
     width: 85vw;
-    min-height: 70vh;
+    min-height: 75vh;
+    p{
+        text-align: justify;
+    }
+    li{
+        font-size: 1.266em;
+        margin-bottom: 1.266em;
+    }
     
     h1{
         @include fullscreenPatch();
         text-align: center;
+        margin-bottom: 1em;
     }
 }
-.manifesto-section{
-    padding-top: 5vh;
+
+.start-section{
+    z-index: 200;
+    background-color: $yellow;
+    height: 70vh;
+    margin-bottom: 30vh;
+    & h1{
+        font-size: 3em;
+        padding: 3.7em 0 0;
+    }
+    & h2{
+        color: $dark-violet;
+        text-align: center;
+    }
+    & h4{
+        font-family: $font-minor;
+        color: $black;
+        text-align: right;
+    }
 }
 
+/*
 .slogans-section{
     background-color: $light-violet;
     color: $yellow;
     padding: 10vh 0;
     width: 300vw;
     text-align: center;   
-}
+}*/
 
-.values-section{
-    background-color: $white;
+.overall-section{
+
+    background-color: $dark-violet;
+    color: $yellow;
     h1{
-        background-color: $orange;
-        color: $light-violet;
+        background-color: $white;
+        color: $dark-violet;
     }
-    h2{
-        color: $light-violet;
-    }
-    p {
-        color: $dark-violet
+    p,b{
+        color: $orange;
     }
 }
 
+.neutrality-section{
+    padding-top: 5vh;
+}
+
+.law-section{
+    p{
+        padding-top: 1em;
+    }
+}
+
+.poland-section{
+    background-color: $orange;
+    color: $dark-violet;
+    h1{
+        background-color: $yellow;
+        color: $light-violet;
+    }
+}
+.poznan-section{
+    background-color: $yellow;
+    color: $light-violet;
+    h1{
+        background-color: $white;
+        color: $light-violet;  
+    }
+}
+/*
 .stories-section{
     h1{
         background-color: $dark-violet;
@@ -191,8 +245,8 @@ section{
         padding-right: 7.5vw;
         margin-bottom: 1em;
     }
-}
-.goals-section{
+}*/
+.demands-section{
     background-color: $dark-violet;
     color: $orange;
     h1{
@@ -202,7 +256,7 @@ section{
         color: $yellow;
     }
 }
-
+/*
 .about-section{
     color: $white;
     background-color: $light-violet;
@@ -213,7 +267,7 @@ section{
     p{
         margin-top: 1em;
     }
-}
+}*/
 .loading-container{
     display: flex;
     width: 100vw;
@@ -235,7 +289,7 @@ footer{
 .menu{
     position: fixed;
     overflow: hidden;
-    z-index: 110;
+    z-index: 210;
     width: 87.5vw;
     height: 100vh;
     background-color: $yellow;
@@ -285,9 +339,14 @@ a{
     }
 
     section{
-        p{
+        p, li{
             width: 55ch;
             max-width: 50vw;   
+        }
+    }
+    .start-section{
+        h1{
+            font-size: 4em;
         }
     }
     /*
