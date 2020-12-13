@@ -7,6 +7,7 @@ html {
   font-size: 12px;
   width: 100vw;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -279,10 +280,11 @@ section h1 {
     }
 }*/
 .loading-container {
+  background-color: #FFF06B;
   display: flex;
   width: 100vw;
   height: 100vh;
-  z-index: 200;
+  z-index: 250;
   justify-content: center;
   align-items: center;
 }
@@ -335,6 +337,11 @@ a {
 .lang-container {
   display: flex;
   justify-content: flex-end;
+}
+
+.svg-lines {
+  width: 100vw;
+  height: auto;
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {

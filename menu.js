@@ -1,6 +1,7 @@
 const openBtn = document.getElementById('open-menu-btn');
 const closeBtn = document.getElementById('close-menu-btn');
 const nav = document.querySelector('nav');
+const links = document.querySelectorAll(".menu li");
 var isOpen = false;
 
 function openMenu(){
@@ -22,3 +23,6 @@ function closeMenu(){
 
 openBtn.addEventListener("click", openMenu);
 closeBtn.addEventListener("click", closeMenu);
+links.forEach(link => {
+    link.addEventListener("click", ()=>setTimeout(closeMenu, 100));
+});

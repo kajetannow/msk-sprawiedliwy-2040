@@ -1,11 +1,13 @@
 .menu-closed {
   left: -100vw;
   transition: left 400ms cubic-bezier(0.24, 0.51, 0.47, 0.98);
+  z-index: 190;
 }
 
 .menu-opened {
   left: 0;
   transition: left 400ms cubic-bezier(0.24, 0.51, 0.47, 0.98);
+  z-index: 210;
 }
 
 @keyframes fadeIn {
@@ -21,12 +23,16 @@
   animation: fadeIn 0.5s ease-in-out infinite alternate;
 }
 
-section, header {
-  animation: fadeIn 0.3s ease-in-out;
+section {
+  animation: fadeIn 0.45s ease-in;
 }
 
-header {
-  animation: fadeIn 0.3s ease-in-out 0.3s;
+section.start-section {
+  animation: none;
+}
+
+section.start-section * {
+  animation: fadeIn 0.45s ease-in;
 }
 
 @media (min-width: 992px) {
