@@ -31,12 +31,15 @@ class Translator {
             var text = keys.reduce((obj, i) => obj[i], translation);
 
             if(Array.isArray(text)){
-            let tag = element.dataset.i18nForTag ? element.dataset.i18nForTag : 'div'
+            //let tag = element.dataset.i18nForTag ? element.dataset.i18nForTag : 'div'
             element.innerHTML = ""
                 text.map((el)=>{
+                  /*
                     let div = document.createElement(tag);
                     div.innerHTML = el;
                     element.appendChild(div);
+                    */
+                   element.innerHTML+=el;
                 })
                 
             }else if (text) {
