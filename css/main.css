@@ -344,6 +344,11 @@ a {
   height: auto;
 }
 
+.content-img {
+  width: 100%;
+  border-radius: 0.5em;
+}
+
 @media (min-width: 768px) and (max-width: 991.98px) {
   html {
     font-size: 110%;
@@ -360,6 +365,15 @@ a {
   }
   .start-section h1 {
     font-size: 4em;
+  }
+  .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .content-img {
+    align-self: flex-start;
+    max-width: 30vw;
+    margin: 0 1em;
   }
   /*
     .grid-container{
