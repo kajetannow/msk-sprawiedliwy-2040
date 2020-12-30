@@ -1,7 +1,7 @@
 import Translator from './Translator.js';
 
 var translator = new Translator();
-//translator.load();
+translator.load();
 
 const langBtns = document.querySelectorAll("button.lang-btn");
 

@@ -1,0 +1,53 @@
+{
+    "siteTitle": "FAIR 2040",
+    "menu": {
+        "start": "start",
+        "slogans": "slogans",
+        "values": "values",
+        "stories": "stories",
+        "demands": "demands",
+        "about": "about us",
+        "contact": "contact"
+    },
+    "start": {
+        "title": "start",
+        "content":
+            "<p>(in english)Litwo! Ojczyzno moja! Ty jesteś jak zdrowie, Ile cię trzeba cenić, ten tylko się dowie, Kto cię stracił. Dziś piękność twą w całej ozdobie Widzę i opisuję, bo tęsknię po tobie</p><p>Panno święta, co Jasnej bronisz Częstochowy I w Ostrej świecisz Bramie! Ty, co gród zamkowy Nowogródzki ochraniasz z jego wiernym ludem! Jak mnie dziecko do zdrowia powróciłaś cudem,</p>"
+    },
+    "slogans": [
+        "(in english)Miejska zieleń",
+        "OGARNIJCIE SIĘ",
+        "PIENIĘDZE NIE SĄ JADALNE",
+        "Zielona Wielkopolska",
+        "Miejska zieleń",
+        "OGARNIJCIE SIĘ",
+        "PIENIĘDZE NIE SĄ JADALNE",
+        "Zielona Wielkopolska"
+    ],
+    "stories":{
+        "title": "Stories",
+        "content": [
+            "<div class=\"story-container\"><h2>Mamy dość węgla, nie górników</h2><p>Oto zdjęcia przedstawiciela zawodu od 20 lat nie wykonywanego w Polsce - górnika.</p><p>jakiś przykładowy tekst</p><p>daje coś po polsku, żeby to nie było lorem ipsum nie wiem jak długie maja być historie o których Wiktoria mi mówiła załóżmy że tyle linijek na potrzeby grafiki starczy.</p></div>",
+            "<div class=\"story-container\"><h2>Zamknąłbym se Bełchatów</h2><p>Oto zdjęcia przedstawiciela zawodu od 20 lat nie wykonywanego w Polsce - górnika.</p><p>jakiś przykładowy tekst</p><p>daje coś po polsku, żeby to nie było lorem ipsum nie wiem jak długie maja być historie o których Wiktoria mi mówiła załóżmy że tyle linijek na potrzeby grafiki starczy.</p></div>"
+            
+        ]
+    },
+    "values":{
+        "title": "Values",
+        "content": [
+            "<h2>Wartość</h2><p>opis wartości</p>",
+            "<h2>Wartość 2</h2><p>opis wartości 2</p>"
+        ]
+    },
+    "demands":{
+        "title": "demands",
+        "content": [
+           "<h2>Cela 1</h2><p>Wsadź żart z Leszka Milera</p>",
+           "<h2>Cela 2</h2><p>Wsadź żart z Leszka Milera</p>"
+        ]
+    },
+    "about":{
+        "title": "About us",
+        "content": ["<p>Jesteśmy ruchem społecznym będącym częścią globalnej inicjatywy Fridays for Future.</p><p>Działając, wyrażamy swój sprzeciw wobec bierności polityków w obliczu katastrofy klimatycznej. Nie jesteśmy ekspertami ds. ekologii i zmian klimatu, lecz młodzieżą świadomą zagrożenia jakim jest katastrofa klimatyczna i walczącą o prawo do swojej przyszłości.</p><p>Zaczynaliśmy jako grupa licealistów zainspirowanych działalnością Grety Thunberg, których aktywność szybko przerodziła się w ogólnopolski ruch.</p> <p>Nasi członkowie to gimnazjaliści, licealiści i studenci.  Uczymy  się z myślą o przyszłości, którą kryzys klimatyczny stawia pod znakiem zapytania.</p><p>Dlatego protestujemy, wypowiadamy się w mediach, rozmawiamy z politykami i organizujemy edukację o zmianach klimatu.</p><p>​Jeśli chcesz ratować świat razem z nami, napisz do nasz na facebooku, poniżej znajdziesz listę miast w których działa MSK, klikając w daną nazwę przejdziecie do fanpage'u danego miasta :))</p>"]
+    }
+}
