@@ -314,14 +314,18 @@ section h1 {
   color: #8C51A5;
 }
 
-.contact-section {
+.contact-section, .bibliography-section {
   background-color: #36034D;
   color: #DCA414;
 }
 
-.contact-section h1 {
+.contact-section h1, .bibliography-section h1 {
   background-color: #8C51A5;
   color: #FFF06B;
+}
+
+.contact-section {
+  min-height: auto;
 }
 
 .loading-container {
@@ -382,11 +386,11 @@ a {
   text-decoration: none;
 }
 
-p a {
+p a, li a, figcaption a {
   font-style: italic;
 }
 
-p a:hover {
+p a:hover, li a:hover, figcaption a:hover {
   text-decoration: underline;
 }
 

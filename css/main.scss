@@ -304,13 +304,16 @@ section{
         color: $light-violet;
     }
 }
-.contact-section{
+.contact-section, .bibliography-section{
     background-color: $dark-violet;
     color: $orange;
     h1{
         background-color: $light-violet;
         color: $yellow;
     }
+}
+.contact-section{
+    min-height: auto;
 }
 .loading-container{
     background-color: $yellow;
@@ -367,7 +370,7 @@ a{
     color: inherit;
     text-decoration: none;
 }
-p a{
+p a, li a, figcaption a{
     font-style: italic;
     &:hover{
         text-decoration: underline;
