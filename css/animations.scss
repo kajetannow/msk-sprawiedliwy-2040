@@ -29,7 +29,12 @@ section.start-section{
         animation: fadeIn 0.45s ease-in;
     }
 } 
-
+section.counter-section{
+    animation: none;
+    *{
+        animation: fadeIn 0.25s ease-in;
+    }
+} 
 // LAPTOPS & DESKTOPS
 @media (min-width: 992px){
     .menu-closed{

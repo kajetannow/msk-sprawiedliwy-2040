@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/animations.css">
-    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital@0;1&display=swap" rel="stylesheet">    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap" rel="stylesheet">
     <title data-i18n="siteTitle">SPRAWIEDLIWY 2040</title>
     <link rel="shortcut icon" href="/favicon.ico">
 <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
@@ -20,7 +22,14 @@
 
 </head>
 <body>
-    
+    <section class="counter-section">
+        <h1 data-i18n="siteTitle">
+            Sprawiedliwy 2040
+        </h1>
+        <div class="counter" id="counter">
+            
+        </div>
+    </section>
     <div class="wrapper">
     <header>
         <button class="menu-btn" id="open-menu-btn">
@@ -35,122 +44,346 @@
             <img src="./icons/arrow_back.svg" />
         </button>
         <ul>
-            <li><a href="#start" data-i18n="menu.start"></a></li>
+            <li><a href="#tale" data-i18n="menu.tale"></a></li>
+            <li><a href="#dict" data-i18n="menu.dict"></a></li>
             <li><a href="#neutrality" data-i18n="menu.neutrality"></a></li>
             <li><a href="#law" data-i18n="menu.law"></a></li>
             <li><a href="#transformation" data-i18n="menu.transformation"></a></li>
-            <li><a href="#poland" data-i18n="menu.poland"></a></li>
-            <li><a href="#poznan" data-i18n="menu.poznan"></a></li>
-            <li><a href="#demands" data-i18n="menu.demands"></a></li>
+            <li><a href="#energetics" data-i18n="menu.energetics"></a></li>
+            <li><a href="#education" data-i18n="menu.education"></a></li>
+            <li><a href="#dreams" data-i18n="menu.dreams"></a></li>
             <li><a href="#contact" data-i18n="menu.contact"></a></li>
         </ul>
         <div class="lang-container">
             <button class="lang-btn" data-lang="en">en</button>
             <button class="lang-btn" data-lang="pl">pl</button>
+            <button class="lang-btn" data-lang="ru">ru</button>
+            <button class="lang-btn" data-lang="ua">ua</button>
         </div>
     </nav>
     <main>
-        
+
         <section class="start-section" id="start">
             <h1 data-i18n="siteTitle">
                 Sprawiedliwy 2040
             </h1>
             <h2 data-i18n="start.subtitle">
-                ON TAKI NIE BĘDZIE, CHYBA, ŻE W KOŃCU ZACZNIEMY DZIAŁAĆ*  
+                ON TAKI NIE BĘDZIE, CHYBA, ŻE W KOŃCU ZACZNIEMY DZIAŁAĆ  
             </h2>
             <h4 data-i18n="start.annotation">
-                *w sumie my już działamy, to o Was, rządzący
+                Opowieść o tym, jak może wyglądać Polska za 20 lat
             </h4>
             
         </section>
-        <!-- 
-            <section class="slogans-section" id="slogans" data-i18n="slogans" data-i18n-for-tag="h2">
-                
-            </section>
-        -->
-        <section class="overall-section neutrality-section" id="neutrality" >
-            <h1 data-i18n="neutrality.title">NEUTRALNOŚĆ KLIMATYCZNA</h1>
-            <h2 data-i18n="neutrality.subtitle">co to jest neutralność klimatyczna?</h2>
-            <div data-i18n="neutrality.content">
-                <p>Cel, którego osiągnięcie jest konieczne dla uniknięcia katastrofy klimatycznej. Jest to sytuacja, w której do minimum zredukowane zostają wszystkie emisje gazów cieplarnianych wynikające z działalności człowieka, pochodzące ze wszystkich sektorów gospodarki (nie tylko energetyki, ale też m. in. przemysłu, transportu, budownictwa), a wszystkie pozostałe emisje CO₂ są równoważone środkami ochrony klimatu - między innymi dzięki nowym, przyjaznym klimatowi technologiom, ale także dzięki dbałości o ograniczone zasoby naturalne. Musimy zwiększyć powierzchnię lasów, absorbujących dwutlenek węgla oraz chronić mokradła, zatrzymujące w sobie wodę. W skrócie - adaptacja do skutków oraz mitygacja kryzysu klimatycznego idą ze sobą w parze.</p>
-                <p>
-            <b>PS - tak na serio, to nic nie wskazuje na to, by to mogło mieć miejsce za 20 lat. Ale wciąż mamy nadzieję. jak możemy osiągnąć neutralność klimatyczną do 2040 roku? odsyłamy do aktualnego stanowiska nauki. naukowcy i naukowczynie znają się na tym znacznie lepiej niż uczniowie i studentki (to my, działacze i aktywistki!), którzy po prostu wiedzą, że to ważne</b>
-        </p>
+        <section class="tale-section" id="tale" >
+            <h1 data-i18n="tale.title">ZA POSADZONYMI LASAMI, ZA CZYSTYMI RZEKAMI</h1>
+            <div class="content-wrapper">
+                <div data-i18n="tale.content">
+                <p>Jest rok 2040, Polska bardzo dobrze poradziła sobie z adaptacją gospodarki do zmian klimatu. <span class="slogan">Nikt nie został pominięty podczas transformacji</span>, dzięki której osiągnęliśmy neutralność klimatyczną. Wszelkie zmiany gospodarcze zostały przeprowadzone sprawiedliwe. Osoby pracujące w szkodliwych dla klimatu sektorach gospodarki otrzymały pomoc w uzyskaniu nowych kwalifikacji. Rząd nie zostawił ich samych sobie, zapewnił im miejsca pracy np. przy produkcji energii z odnawialnych źródeł. Dzięki temu Polska w 2040 roku jest <span class="slogan"></span>Polską bez węgla</span>, a jej obywatele dumnie mówią <span class="slogan">Napędza nas zielona energia</span>. </p>
+                <p>Ciągle są wprowadzane nowe rozwiązania i udoskonalenia techniczne, ponieważ <span class="slogan">podążamy za nauką</span>. Wszyscy obywatele wiedzą, że zmiana, wprowadzona raz, nie jest na zawsze, dlatego nie mają nic przeciwko sprawiedliwie i spokojnie wprowadzanym ulepszeniom. Każde dostosowanie do zmieniającej się sytuacji jest objęte odpowiednimi regulacjami prawnymi tak, żeby chronione były zasoby naturalne i ludzie. Taka sytuacja jest możliwa, ponieważ w 2021 roku rząd zaczął traktować poważnie zarówno katastrofę klimatyczną, jak i edukację. W podstawie programowej temat klimatu poruszany jest od najmłodszych lat. Przekazuje się go w formie odpowiedniej do wieku. Dla uczniów i wszystkich obywateli, którzy nie radzą sobie z kwestiami zmian klimatu, zapewniona jest pomoc psychologa. </p>
+                <p>W pierwszej kolejności głos zabierają naukowcy, których zdanie jest powszechnie szanowane. W tematach wymagających mniejszej wiedzy eksperckiej decydują mieszkańcy, a ich stanowisko uzgadniane jest podczas paneli obywatelskich. Rząd uznaje zdanie jednych i drugich oraz wprowadza odpowiednie zmiany i regulacje prawne. <span class="slogan">Żyjemy w zielonych czasach</span>, a klimat, chociaż nie został naprawiony raz na zawsze,  stał się priorytetem. Nie jest przedmiotem sporu, łączy ludzi, którzy wspólnie chcą działać dla lepszej przyszłości. Wiedzą, że jedynie wspólne działanie da upragniony efekt, jakim jest możliwie jak największe zmniejszenie skutków zmian klimatycznych i niedopuszczenie do pogłębienia się katastrofy.</p>
+                <h2>A WSZYSCY ŻYLI ZIELONO I SPRAWIEDLIWIE.</h2>
+                </div>
             </div>
         </section>
-        <section class="overall-section law-section" id="law" >
-            <h1 data-i18n="law.title">KSZTAŁTOWANIE PRAWA W POLSCE</h1>
+
+        <section class="dict-section" id="dict" >
+            <h1 data-i18n="dict.title">SŁOWNICZEK WAŻNYCH POJĘĆ</h1>
+        </section>
+        <section class="neutrality-section" id="neutrality" >
+            <h1 data-i18n="neutrality.title">NEUTRALNOŚĆ KLIMATYCZNA</h1>
+            <div class="content-wrapper">
+            <div data-i18n="neutrality.content">
+                <p>to cel, którego osiągnięcie jest konieczne dla uniknięcia katastrofy klimatycznej. Jest to sytuacja, w której do minimum zredukowane zostają wszystkie emisje gazów cieplarnianych wynikające z działalności człowieka, pochodzące ze wszystkich sektorów gospodarki (nie tylko energetyki, ale też m.in. przemysłu, transportu, budownictwa), a wszystkie pozostałe emisje CO₂ są równoważone środkami ochrony klimatu - między innymi dzięki nowym, przyjaznym klimatowi technologiom, ale także dzięki dbałości o ograniczone zasoby naturalne. </p>
+                <p>W 2020 roku ten cel był coraz dalej przesuwany, Polska dzierżyła niechlubne miano najmniej klimatycznego państwa w Unii Europejskiej. Większość osób na polskiej scenie politycznej ignorowała głos nauki, a także sam temat klimatu spychała na ostatni plan.</p>
+                <p><b>Ale ku zdziwieniu obserwatorów, w polityce znalazło się miejsce na działanie dla klimatu.</b></p>
+                <p>Jesteśmy na najlepszej drodze do osiągnięcia pełnej neutralności klimatycznej, bo już 10 lat temu zrezygnowaliśmy ze spalania węgla. Wiemy też, że nie tylko zeroemisyjność jest istotna, ale także wiązanie wcześniej wyemitowanych związków węgla. Nasze działania są podyktowane dbałością o wyczerpywalne zasoby naturalne. Zwiększamy zatem powierzchnię lasów, absorbujących dwutlenek węgla oraz chronimy mokradła, zatrzymujące w sobie wodę. W skrócie - adaptacja do skutków oraz mitygacja kryzysu klimatycznego idą ze sobą w parze.</p>
+            </div>
+            <picture>
+                <img class="content-img"
+                sizes="(max-width: 2180px) 100vw, 2180px"
+                srcset="
+                ./photos/neutr/_DSC9730_x1uczp_c_scale,w_250.jpg 250w,
+                ./photos/neutr/_DSC9730_x1uczp_c_scale,w_452.jpg 452w,
+                ./photos/neutr/_DSC9730_x1uczp_c_scale,w_615.jpg 615w,
+                ./photos/neutr/_DSC9730_x1uczp_c_scale,w_747.jpg 747w,
+                ./photos/neutr/_DSC9730_x1uczp_c_scale,w_879.jpg 879w,
+                ./photos/neutr/_DSC9730_x1uczp_c_scale,w_1003.jpg 1003w,
+                ./photos/neutr/_DSC9730_x1uczp_c_scale,w_1118.jpg 1118w,
+                ./photos/neutr/_DSC9730_x1uczp_c_scale,w_1229.jpg 1229w,
+                ./photos/neutr/_DSC9730_x1uczp_c_scale,w_1327.jpg 1327w,
+                ./photos/neutr/_DSC9730_x1uczp_c_scale,w_1434.jpg 1434w,
+                ./photos/neutr/_DSC9730_x1uczp_c_scale,w_1533.jpg 1533w,
+                ./photos/neutr/_DSC9730_x1uczp_c_scale,w_1621.jpg 1621w,
+                ./photos/neutr/_DSC9730_x1uczp_c_scale,w_1709.jpg 1709w,
+                ./photos/neutr/_DSC9730_x1uczp_c_scale,w_1796.jpg 1796w,
+                ./photos/neutr/_DSC9730_x1uczp_c_scale,w_1879.jpg 1879w,
+                ./photos/neutr/_DSC9730_x1uczp_c_scale,w_1961.jpg 1961w,
+                ./photos/neutr/_DSC9730_x1uczp_c_scale,w_2036.jpg 2036w,
+                ./photos/neutr/_DSC9730_x1uczp_c_scale,w_2116.jpg 2116w,
+                ./photos/neutr/_DSC9730_x1uczp_c_scale,w_2153.jpg 2153w,
+                ./photos/neutr/_DSC9730_x1uczp_c_scale,w_2180.jpg 2180w"
+                src="./photos/neutr/_DSC9730_x1uczp_c_scale,w_2180.jpg"
+                alt="">
+                </picture>
+            </div>
+        </section>
+        <section class="law-section" id="law" >
+            <h1 data-i18n="law.title">PRAWORZĄDNOŚĆ</h1>
             <div class="content-wrapper">
                 <div class="section-content" data-i18n="law.content">
-                <p>Polskie prawo chroni ograniczone zasoby naturalne, a osoby decyzyjne sprawdzają efekty zapoczątkowanych działań. Decyzje w rządzie są podejmowane z szerokim  uwzględnieniem ich wpływu na klimat i środowisko Polski. Środki budżetowe w dużej części pokrywają pokrywają eliminację skutków zmian klimatu i skupione są na adaptacji Polski. Obywatele i obywatelki biorą czynny udział w formowaniu legislacji, ich głos jest na równi z głosem polityków i polityczek. W obrębie edukacji zapewniona jest systemowa opieka psychologiczna, skupiona na radzeniu sobie z lękiem przed zmianami klimatu. Polska dostosowała się do europejskich standardów, które stały się znacznie ambitniejsze niż jeszcze dwie dekady temu i wyznacza tor działania proklimatycznego dla innych państw UE. W grudniu 2020 roku premier Morawiecki w końcu, po latach ignorowania, podjął odpowiedzialne decyzje, zgodne z wykładnią naukową oraz stanowiskiem ruchów i organizacji klimatycznych, co stało się sensacją XXI wieku i na zawsze zmieniło bieg historii.</p>
-                <p><b>(PS - to nie jest prawda. ale Panie Premierze, patrzymy Panu na ręce. Czas wywiązać się ze zobowiązań złożonych podczas szczytu Rady Europejskiej w grudniu 2020)</b></p>
-            </div>
-                <img class="content-img" src="./photos/DSC9682.jpg" >
+                <p>to szeroko pojęte stanowienie odpowiedniego prawa oraz późniejsze przestrzeganie go. Chroni nie tylko obywateli, ale również dobra naturalne. </p>
+                <p>W roku 2020, ale też w poprzednich latach wielu mieszkańców Polski nie czuło się w kraju bezpiecznie. Prawo nie było respektowane tak, jak powinno. Ludzie wychodzili na ulice, żeby mówić i walczyć o swoje racje. Każdej osobie zależało na zrozumieniu, na równości. Tak samo dobra naturalne nie były  odpowiednio ochronione. W celu zrealizowania kolejnych niedokładnie przemyślanych inwestycji wycięto tysiące drzew i zniszczono setki ekosystemów. Niektórych z nich już nigdy nie udało się odbudować.</p>
+                <p><b>Ale nasze głosy zostały wreszcie wysłuchane przez osoby decyzyjne.</b></p>
+                <p>Dzięki jasno określonym i respektowanym regulacjom działania podejmowane np. podczas sprawiedliwej transformacji wyznaczone są tak, aby ludzie otrzymali odpowiednią pomoc. Skutki zmian w gospodarce nie dotykają aż tak jednostek. Owa pomoc jest zapewniona prawnie, więc ewentualne niedopatrzenia mogą być egzekwowane w sądzie. Zapewnia to poczucie bezpieczeństwa obywateli. Ochrona zasobów naturalnych pozwala na efektywne działania mające na celu zredukowanie skutków katastrofy klimatycznej. Dobra naturalne są kontrolowane, a podejmowane z nimi działania są zgodne z nauką.</p>
+                <p>W Polsce jest miejsce dla wszystkich. Prawa wszelkich grup społecznych są równo respektowane. Przy tym każda osoba może liczyć na pomoc prawną, jeśli tylko będzie jej potrzebować. Nareszcie jesteśmy krajem, w którym ludzie czują się dobrze i bezpiecznie. Nikt nie został pominięty podczas przemian w sektorach gospodarki, sądownictwa czy energetyki.</p>
+
+                </div>
+                <picture>
+                    <img class="content-img"
+                    sizes="(max-width: 2180px) 100vw, 2180px"
+                    srcset="
+                    ./photos/law/_DSC2353_tbepjh_c_scale,w_639.jpg 639w,
+                    ./photos/law/_DSC2353_tbepjh_c_scale,w_250.jpg 250w,
+                    ./photos/law/_DSC2353_tbepjh_c_scale,w_883.jpg 883w,
+                    ./photos/law/_DSC2353_tbepjh_c_scale,w_1095.jpg 1095w,
+                    ./photos/law/_DSC2353_tbepjh_c_scale,w_1236.jpg 1236w,
+                    ./photos/law/_DSC2353_tbepjh_c_scale,w_1356.jpg 1356w,
+                    ./photos/law/_DSC2353_tbepjh_c_scale,w_1463.jpg 1463w,
+                    ./photos/law/_DSC2353_tbepjh_c_scale,w_1564.jpg 1564w,
+                    ./photos/law/_DSC2353_tbepjh_c_scale,w_1653.jpg 1653w,
+                    ./photos/law/_DSC2353_tbepjh_c_scale,w_1740.jpg 1740w,
+                    ./photos/law/_DSC2353_tbepjh_c_scale,w_1822.jpg 1822w,
+                    ./photos/law/_DSC2353_tbepjh_c_scale,w_1906.jpg 1906w,
+                    ./photos/law/_DSC2353_tbepjh_c_scale,w_1977.jpg 1977w,
+                    ./photos/law/_DSC2353_tbepjh_c_scale,w_2054.jpg 2054w,
+                    ./photos/law/_DSC2353_tbepjh_c_scale,w_2134.jpg 2134w,
+                    ./photos/law/_DSC2353_tbepjh_c_scale,w_2179.jpg 2179w,
+                    ./photos/law/_DSC2353_tbepjh_c_scale,w_2180.jpg 2180w"
+                    src="./photos/law/_DSC2353_tbepjh_c_scale,w_2180.jpg"
+                    alt="">
+                    </picture>
             </div>
         </section>
-        <section class="overall-section transformation-section" id="transformation" >
-            <h1 data-i18n="transformation.title">POLSKA JEST W TRAKCIE SPRAWIEDLIWEJ TRANSFORMACJI</h1>
-            <h2 data-i18n="transformation.subtitle">czym jest sprawiedliwa transformacja?</h2>
+        <section class="transformation-section" id="transformation" >
+            <h1 data-i18n="transformation.title">TRANSFORMACJA</h1>
+            <div class="content-wrapper">
             <div data-i18n="transformation.content">
-                <p>
-                    to proces zmiany gospodarki wyskoemisyjnej na zeroemisyjną, polegający na odejściu od szkodliwych dla ludzi i klimatu technologii, który powinien przebiegać z udziałem oraz uwzględnieniem praw i potrzeb wszystkich, których dotkną jej skutki. Szczególnie zależy na wzięciu pod uwagę przyszłości osób zatrudnionych w sektorach energetyki, rolnictwa, przemysłu i transportu. 
-                </p>
-                <p>
-                    Ludzie zatrudnieni w  sektorach, które nie mogą już dłużej funkcjonować ze względu na kryzys klimatyczny, nie powinni zostać pozostawieni sami sobie, mierząc się z niebezpieczeństwem utraty pracy i źródła utrzymania. Jest to odpowiedzialność państwa, które powinno zadbać o miejsca pracy odpowiadające kompetencjom i motywacjom ludzi z transformowanych sektorów.
-                </p>
+                <p>To proces zmiany gospodarki wysokoemisyjnej na zeroemisyjną. Polega on na odejściu od szkodliwych dla ludzi i klimatu technologii i powinien przebiegać z udziałem oraz uwzględnieniem praw i potrzeb wszystkich, których dotkną jej skutki. Szczególnie ważne jest wzięcie pod uwagę przyszłości osób zatrudnionych w sektorach energetyki, rolnictwa, przemysłu i transportu. </p>
+                <p>Ludzie zatrudnieni w  sektorach, które nie mogą już dłużej funkcjonować ze względu na kryzys klimatyczny, nie powinni zostać pozostawieni sami sobie, mierząc się z niebezpieczeństwem utraty pracy i źródła utrzymania. Jest to odpowiedzialność państwa, które powinno zadbać o miejsca pracy odpowiadające kompetencjom i motywacjom ludzi z transformowanych sektorów.</p>
+                <p>W grudniu 2020 roku nie doszło do veta Polski na Szczycie Rady Europejskiej. Został uchwalony budżet klimatyczny m.in. na przeprowadzenie transformacji. Niestety, nie mówiło się w Polsce na serio o przemianach gospodarczych. Zamknięcie kopalń nie było rozważane. Nie zapowiadało się na to, że osoby zatrudnione w górnictwie, rolnictwie, przemyśle i transporcie dostaną wsparcie przy przekwalifikowaniu się do sektorów gospodarki mniej narażonych na skutki katastrofy klimatycznej.</p>
+                <p><b>Ale zmienił się kierunek polityki i odpowiednie działania zostały w końcu podjęte.</b></p>
+                <p>Aktualnie problem zmiany kwalifikacji nie istnieje. Wszystkie osoby zatrudnione w sektorach gospodarki narażonych na zmiany klimatyczne dostały odpowiednią pomoc przy zdobywaniu nowych kompetencji zawodowych i bezpieczniejsze miejsca pracy. Rząd wypracował działający system, który zapewnia zatrudnienie. Gdy ciągle zmieniająca się sytuacja klimatyczno-społeczna wymusza przekwalifikowanie, to wiadomo jak postępować. Pomoc jest uregulowana prawnie i zapewniana jest z odpowiednim wyprzedzeniem.</p>
             </div>
+            <picture>
+            <img class="content-img"
+                sizes="(max-width: 2180px) 100vw, 2180px"
+                srcset="
+                ./photos/transf/_DSC9737_qorwdc_c_scale,w_250.jpg 250w,
+                ./photos/transf/_DSC9737_qorwdc_c_scale,w_461.jpg 461w,
+                ./photos/transf/_DSC9737_qorwdc_c_scale,w_628.jpg 628w,
+                ./photos/transf/_DSC9737_qorwdc_c_scale,w_770.jpg 770w,
+                ./photos/transf/_DSC9737_qorwdc_c_scale,w_901.jpg 901w,
+                ./photos/transf/_DSC9737_qorwdc_c_scale,w_1025.jpg 1025w,
+                ./photos/transf/_DSC9737_qorwdc_c_scale,w_1134.jpg 1134w,
+                ./photos/transf/_DSC9737_qorwdc_c_scale,w_1243.jpg 1243w,
+                ./photos/transf/_DSC9737_qorwdc_c_scale,w_1353.jpg 1353w,
+                ./photos/transf/_DSC9737_qorwdc_c_scale,w_1445.jpg 1445w,
+                ./photos/transf/_DSC9737_qorwdc_c_scale,w_1534.jpg 1534w,
+                ./photos/transf/_DSC9737_qorwdc_c_scale,w_1631.jpg 1631w,
+                ./photos/transf/_DSC9737_qorwdc_c_scale,w_1722.jpg 1722w,
+                ./photos/transf/_DSC9737_qorwdc_c_scale,w_1801.jpg 1801w,
+                ./photos/transf/_DSC9737_qorwdc_c_scale,w_1882.jpg 1882w,
+                ./photos/transf/_DSC9737_qorwdc_c_scale,w_1963.jpg 1963w,
+                ./photos/transf/_DSC9737_qorwdc_c_scale,w_2043.jpg 2043w,
+                ./photos/transf/_DSC9737_qorwdc_c_scale,w_2123.jpg 2123w,
+                ./photos/transf/_DSC9737_qorwdc_c_scale,w_2156.jpg 2156w,
+                ./photos/transf/_DSC9737_qorwdc_c_scale,w_2180.jpg 2180w"
+                src="./photos/transf/_DSC9737.jpg"
+                alt="">
+            </div>
+        </picture>
         </section>
         
-                    
-        <section class="poland-section" id="poland">
-            <h1 data-i18n="poland.title">POLSKA W 2040</h1>
-            <div data-i18n="poland.content">
-                <p>Już 10 lat temu Polska odeszła od spalania węgla w energetyce.  A dziś rezygnujemy ze spalania wszystkich paliw kopalnych, również gazu ziemnego. Społeczeństwo jest świadome, że to dzięki zmianom systemowym, a nie tylko indywidualnym wyborom, zapewniamy sobie i przyszłym pokoleniom bezpieczną przyszłość. Udało się zwiększyć liczbę miejsc pracy, dzięki decentralizacji energetyki. Nowe technologie, których używamy do produkcji energii, umożliwiły przebranżowienie się osobom, przed laty pracującym w górnictwie. Ale to nie tylko zmiany w energetyce. To także zmiany w rolnictwie, przemyśle, transporcie. Jeszcze dużo pracy przed nami - ale idziemy w dobrą stronę, świadomie, razem, ramię w ramię. Rząd przestał mijać się z prawdą i rzetelnie informuje społeczeństwo o problemach oraz proponowanych rozwiązaniach. Tak, nawet minister Jacek Sasin już jesienią 2020 roku przyznał, że plan energetyki opartej na węglu nawet do 2060 roku jest nie tylko nierealny, ekonomicznie nieuzasadniony i nie daje gwarancji funkcjonowania Polskiej Grupy Górniczej w najbliższych latach, ale jest przede wszystkim fatalny w kontekście kryzysu klimatycznego. Podjął więc uczciwy dialog ze stroną społeczną, by ostatecznie doprowadzić do sprawiedliwej transformacji energetycznej i z sukcesem odejść od węgla. Panie Sasin - dziękujemy!</p>
-                <p><b>(PS - to też nie jest prawda. ale jesień 2020 r. jeszcze trwa, czekamy na zmianę zdania, Panie Ministrze! Wszystkim innym decydentom przypominamy - sprawiedliwość klimatyczna musi dziać się teraz i powinna mieć miejsce już dawno)</b></p>
-            </div>
-        </section>
-
-        <section class="poznan-section" id="poznan">
-            <h1 data-i18n="poznan.title">POZNAŃ W 2040</h1>
+        <section class="energetics-section" id="energetics" >
+            <h1 data-i18n="energetics.title">ENERGETYKA</h1>
             <div class="content-wrapper">
-            <div class="section-content" data-i18n="poznan.content">
-                <p>Lokalne władze już dawno zrozumiały, że problem z klimatem nie ogranicza się jedynie do smogu. Po panelu obywatelskim, dzięki działaniom najpierw młodzieżowej komisji ds. klimatu, a w konsekwencji także komisji ds. klimatu działającej przy całej Radzie Miasta, zdecydowano się m.in. na wzmożoną ochronę poznańskich klinów zieleni. W świadomości lokalnej społeczności nadal istnieją zabetonowane place i popularne ulice w centrum, które jednak sukcesywnie zazieleniają się i wracają do świetności sprzed epoki betonu. </p>
-                <p>W poznańskich szkołach dużo rozmawia się o klimacie. Absolwenci i absolwentki szkół są dobrze przygotowani do funkcjonowania w zmieniającym się świecie dzięki kompleksowej edukacji klimatycznej oraz wychowaniu w poszanowaniu do przyrody i zasobów naturalnych. Nasze miasto korzysta z energii ze źródeł odnawialnych, w czym swój udział mają też mieszkańcy, korzystający z przydomowych elektrowni wiatrowych i słonecznych. W centrum miasta nie jeździ tyle samochodów, co 20 lat temu, bo komunikacja miejska stała się bardzo dostępna i konkurencyjna cenowo w stosunku do poruszania się samochodem. Dużą różnicę odczuwają osoby korzystające z rowerów, a tych z każdym rokiem przybywa. Drogi rowerowe są rozsądnie rozplanowane i bezpiecznie poprowadzone. Co więcej, w obrębie aglomeracji pojawia się coraz więcej łąk kwietnych, dzięki którym pszczoły i inne owady zapylające mogą żyć i pracować w spokoju. Jesteśmy miastem, które dzięki systemowym zmianom i ogólnej większej świadomości społeczeństwa wspiera dążenie do lepszej przyszłości. </p>
+                <div data-i18n="energetics.content">
+                    <p>to działalność człowieka przekształcająca występującą w przyrodzie energię na takie formy (np. energia elektryczna, energia cieplna), które ludzkość może wykorzystywać do swoich celów.</p>
+                    <p>W 2020 Polska energetyka opierała się na źródłach niszczycielskich dla klimatu. Ponad 80%[1] prądu było generowane za pomocą paliw kopalnych, takich jak węgiel, gaz ziemny i ropa naftowa. Nawet produkcję wodoru przeprowadzano głównie z gazu ziemnego[2] – był to sposób, który emitował gazy cieplarniane do atmosfery. Pojawiały się pierwsze autobusy elektryczne, ale nie zmieniało to sytuacji, bo prąd, który je zasilał pochodził z wysokoemisyjnych źródeł.</p>
+                    <p><b>Ale potem nasi rządzący posłuchali nauki i radykalnie zmienili kurs.</b></p>
+                    <p class="p-2040"> Obecnie nasza energetyka jest zeroemisyjna. Węgiel i gaz ziemny to zdecydowanie przeszłość w elektrowniach. Z pewnych procesów nie udało nam się wyeliminować emisji metanu i dwutlenku węgla, ale nie stanowi to problemu dzięki wychwytywaniu ich z atmosfery[3]. Natura okazała się być sprzymierzeńcem technologii – odtworzone mokradła i bagna magazynują w sobie węgiel[4]. Mikroorganizmy naturalnie produkujących wodór[5] zostały udoskonalone przez naszych biotechnologów. Dzisiaj już nikt nie myśli o używaniu do tego gazu ziemnego.</p>
+                    <p><b>Państwo i sektor prywatny w porę podjęli odpowiedzialne decyzje i zapewnili nam dobrą teraźniejszość.</b></p>
+                </div>
+                <figure>
+                    <img class="content-img"
+                    sizes="(max-width: 2180px) 100vw, 2180px"
+                    srcset="
+                    ./photos/WDP/WDP_p1rvzz_c_scale,w_250.jpg 250w,
+                    ./photos/WDP/WDP_p1rvzz_c_scale,w_504.jpg 504w,
+                    ./photos/WDP/WDP_p1rvzz_c_scale,w_695.jpg 695w,
+                    ./photos/WDP/WDP_p1rvzz_c_scale,w_859.jpg 859w,
+                    ./photos/WDP/WDP_p1rvzz_c_scale,w_1008.jpg 1008w,
+                    ./photos/WDP/WDP_p1rvzz_c_scale,w_1136.jpg 1136w,
+                    ./photos/WDP/WDP_p1rvzz_c_scale,w_1265.jpg 1265w,
+                    ./photos/WDP/WDP_p1rvzz_c_scale,w_1376.jpg 1376w,
+                    ./photos/WDP/WDP_p1rvzz_c_scale,w_1484.jpg 1484w,
+                    ./photos/WDP/WDP_p1rvzz_c_scale,w_1590.jpg 1590w,
+                    ./photos/WDP/WDP_p1rvzz_c_scale,w_1685.jpg 1685w,
+                    ./photos/WDP/WDP_p1rvzz_c_scale,w_1774.jpg 1774w,
+                    ./photos/WDP/WDP_p1rvzz_c_scale,w_1866.jpg 1866w,
+                    ./photos/WDP/WDP_p1rvzz_c_scale,w_1948.jpg 1948w,
+                    ./photos/WDP/WDP_p1rvzz_c_scale,w_2023.jpg 2023w,
+                    ./photos/WDP/WDP_p1rvzz_c_scale,w_2105.jpg 2105w,
+                    ./photos/WDP/WDP_p1rvzz_c_scale,w_2179.jpg 2179w,
+                    ./photos/WDP/WDP_p1rvzz_c_scale,w_2180.jpg 2180w"
+                    src="./photos/WDP/WDP.jpg"
+                    alt="">
+                    <figcaption>&copy; Anastasija Kukaleva (<a href="https://creativecommons.org/licenses/by-nd/2.0/">CC BY-ND 2.0</a>)</figcaption>
+                </figure>
             </div>
-            <img src="./photos/DSC2353.jpg" class="content-img" >
-        </div>
+            
+        </section>
+        
+
+        <section class="education-section" id="education" >
+            <h1 data-i18n="education.title">EDUKACJA</h1>
+            <div class="content-wrapper">
+                <div data-i18n="education.content">
+                <p>to ogół procesów i oddziaływań, których celem jest zmienianie ludzi, przede wszystkim dzieci i młodzieży, stosownie do panujących w danym społeczeństwie ideałów i celów wychowawczych.</p>
+                <p>W 2020 roku edukacja nie brała pod uwagę ryzyka katastrofy klimatycznej, trudno było liczyć na rzetelne informacje o klimacie w podstawowym planie nauczania. Co więcej, na oficjalnej platformie e-learningowej pojawił się materiał negujący fatalny wpływ człowieka na klimat, mówiono tam też o dobrych (!) stronach zmian klimatu w Polsce, ignorując wszystkie złe konsekwencje. O stan edukacji musiały martwić się osoby edukowane - uczennice i uczniowie - a nie edukujące. Okres pandemii pozwolił na uczestniczenie w niezależnie organizowanych lekcjach i wykładach. Po raz kolejny jakość przekazywanej wiedzy zależała w dużej mierze od indywidualnego wysiłku, a nie od dobrze zaplanowanego systemu edukacji.</p>
+                <p><b>Ale doszło do przełomu.</b></p>
+                <p class="p-2040">W tym roku maturę napisał rocznik 2021, osoby, które od samego początku wzrastały w duchu dbania o planetę i klimat. W ich edukacji ogromną rolę odgrywało grono nauczycielskie, dla którego katastrofa klimatyczna jest realnym wyzwaniem, a nie tylko koncepcją z artykułów naukowych. Każdego roku uniwersytety w Polsce szkolą setki nauczycieli i naukowców, gotowych przekazywać swoją wiedzę z pasją i poszerzać naukowe horyzonty. Polskie uczelnie przyjęły za cel działania zapobiegające  zmianom klimatu i adaptację do nich. Nakłady finansowe są wydawane na rozwój badań i technologii, wspomagających transformację gospodarki. To szkolnictwo wyższe nadaje tor i tempo działań, a społeczeństwo może czuć się dumne z polskiego zaplecza naukowego.</p>
+                </div>
+            <div>
+                <picture>
+                    <img class="content-img"
+                    sizes="(max-width: 2180px) 100vw, 2180px"
+                    srcset="
+                    ./photos/edu1/42_mtrvri_c_scale,w_250.jpg 250w,
+                    ./photos/edu1/42_mtrvri_c_scale,w_472.jpg 472w,
+                    ./photos/edu1/42_mtrvri_c_scale,w_643.jpg 643w,
+                    ./photos/edu1/42_mtrvri_c_scale,w_786.jpg 786w,
+                    ./photos/edu1/42_mtrvri_c_scale,w_918.jpg 918w,
+                    ./photos/edu1/42_mtrvri_c_scale,w_1044.jpg 1044w,
+                    ./photos/edu1/42_mtrvri_c_scale,w_1153.jpg 1153w,
+                    ./photos/edu1/42_mtrvri_c_scale,w_1262.jpg 1262w,
+                    ./photos/edu1/42_mtrvri_c_scale,w_1372.jpg 1372w,
+                    ./photos/edu1/42_mtrvri_c_scale,w_1467.jpg 1467w,
+                    ./photos/edu1/42_mtrvri_c_scale,w_1555.jpg 1555w,
+                    ./photos/edu1/42_mtrvri_c_scale,w_1653.jpg 1653w,
+                    ./photos/edu1/42_mtrvri_c_scale,w_1742.jpg 1742w,
+                    ./photos/edu1/42_mtrvri_c_scale,w_1827.jpg 1827w,
+                    ./photos/edu1/42_mtrvri_c_scale,w_1907.jpg 1907w,
+                    ./photos/edu1/42_mtrvri_c_scale,w_1992.jpg 1992w,
+                    ./photos/edu1/42_mtrvri_c_scale,w_2079.jpg 2079w,
+                    ./photos/edu1/42_mtrvri_c_scale,w_2159.jpg 2159w,
+                    ./photos/edu1/42_mtrvri_c_scale,w_2171.jpg 2171w,
+                    ./photos/edu1/42_mtrvri_c_scale,w_2180.jpg 2180w"
+                    src="./photos/edu1/42.jpg"
+                    alt="">
+                    </picture>
+                    <picture>
+                        <img class="content-img"
+                        sizes="(max-width: 2180px) 100vw, 2180px"
+                        srcset="
+                        ./photos/edu2/71_iqjam2_c_scale,w_250.jpg 250w,
+                        ./photos/edu2/71_iqjam2_c_scale,w_478.jpg 478w,
+                        ./photos/edu2/71_iqjam2_c_scale,w_648.jpg 648w,
+                        ./photos/edu2/71_iqjam2_c_scale,w_793.jpg 793w,
+                        ./photos/edu2/71_iqjam2_c_scale,w_918.jpg 918w,
+                        ./photos/edu2/71_iqjam2_c_scale,w_1039.jpg 1039w,
+                        ./photos/edu2/71_iqjam2_c_scale,w_1155.jpg 1155w,
+                        ./photos/edu2/71_iqjam2_c_scale,w_1256.jpg 1256w,
+                        ./photos/edu2/71_iqjam2_c_scale,w_1362.jpg 1362w,
+                        ./photos/edu2/71_iqjam2_c_scale,w_1460.jpg 1460w,
+                        ./photos/edu2/71_iqjam2_c_scale,w_1555.jpg 1555w,
+                        ./photos/edu2/71_iqjam2_c_scale,w_1644.jpg 1644w,
+                        ./photos/edu2/71_iqjam2_c_scale,w_1739.jpg 1739w,
+                        ./photos/edu2/71_iqjam2_c_scale,w_1826.jpg 1826w,
+                        ./photos/edu2/71_iqjam2_c_scale,w_1907.jpg 1907w,
+                        ./photos/edu2/71_iqjam2_c_scale,w_1991.jpg 1991w,
+                        ./photos/edu2/71_iqjam2_c_scale,w_2078.jpg 2078w,
+                        ./photos/edu2/71_iqjam2_c_scale,w_2151.jpg 2151w,
+                        ./photos/edu2/71_iqjam2_c_scale,w_2172.jpg 2172w,
+                        ./photos/edu2/71_iqjam2_c_scale,w_2180.jpg 2180w"
+                        src="./photos/edu2/71.jpg"
+                        alt="">
+                        </picture>
+                        <picture>
+                            <img class="content-img"
+                            sizes="(max-width: 2180px) 100vw, 2180px"
+                            srcset="
+                            ./photos/edu3/_DSC9644_ezafe7_c_scale,w_250.jpg 250w,
+                            ./photos/edu3/_DSC9644_ezafe7_c_scale,w_457.jpg 457w,
+                            ./photos/edu3/_DSC9644_ezafe7_c_scale,w_621.jpg 621w,
+                            ./photos/edu3/_DSC9644_ezafe7_c_scale,w_765.jpg 765w,
+                            ./photos/edu3/_DSC9644_ezafe7_c_scale,w_889.jpg 889w,
+                            ./photos/edu3/_DSC9644_ezafe7_c_scale,w_1011.jpg 1011w,
+                            ./photos/edu3/_DSC9644_ezafe7_c_scale,w_1127.jpg 1127w,
+                            ./photos/edu3/_DSC9644_ezafe7_c_scale,w_1236.jpg 1236w,
+                            ./photos/edu3/_DSC9644_ezafe7_c_scale,w_1336.jpg 1336w,
+                            ./photos/edu3/_DSC9644_ezafe7_c_scale,w_1431.jpg 1431w,
+                            ./photos/edu3/_DSC9644_ezafe7_c_scale,w_1523.jpg 1523w,
+                            ./photos/edu3/_DSC9644_ezafe7_c_scale,w_1614.jpg 1614w,
+                            ./photos/edu3/_DSC9644_ezafe7_c_scale,w_1707.jpg 1707w,
+                            ./photos/edu3/_DSC9644_ezafe7_c_scale,w_1789.jpg 1789w,
+                            ./photos/edu3/_DSC9644_ezafe7_c_scale,w_1875.jpg 1875w,
+                            ./photos/edu3/_DSC9644_ezafe7_c_scale,w_1956.jpg 1956w,
+                            ./photos/edu3/_DSC9644_ezafe7_c_scale,w_2035.jpg 2035w,
+                            ./photos/edu3/_DSC9644_ezafe7_c_scale,w_2110.jpg 2110w,
+                            ./photos/edu3/_DSC9644_ezafe7_c_scale,w_2158.jpg 2158w,
+                            ./photos/edu3/_DSC9644_ezafe7_c_scale,w_2180.jpg 2180w"
+                            src="./photos/edu3/_DSC9644.jpg"
+                            alt="">
+                            </picture>
+            </div>
+            </div>
         </section>
 
-        <section class="demands-section" id="demands" >
-            <h1 data-i18n="demands.title">Postulaty</h1>
-            <div data-i18n="demands.content">
+        <section class="dreams-section" id="dreams">
+            <h1 data-i18n="dreams.title">SZEŚĆ SPEŁNIONYCH MARZEŃ</h1>
+            <div data-i18n="dreams.content">
                 <ol>
-                <li>1. W 2040 roku polityka klimatyczna jest prowadzona w oparciu o aktualne i wciąż aktualizowane stanowisko nauki. Na dzień dzisiejszy, najważniejsze jest dla nas jego ujęcie w najnowszych raportach Międzynarodowego Zespołu ds. Zmian Klimatu (IPCC) powołanego przez ONZ. </li>
-
-<li>2. Rząd polski już dawno uznał katastrofę klimatyczną poprzez ogłoszenie stanu kryzysu klimatycznego. Zdaniem osób decyzyjnych, kwestia kryzysu nie mogła być przedmiotem ideologicznych sporów - w obliczu katastrofy musieliśmy przecież mówić wspólnym głosem, ponad podziałami. </li>
-
-<li>3. Młodzież domagająca się zawarcia kompleksowej oraz aktualnej wiedzy o mechanizmach kryzysu klimatycznego w podstawie programowej na wszystkich szczeblach edukacji doczekała się tych zmian. Kadrze nauczycielskiej zapewniono obowiązkowych szkolenia w tym zakresie  Urodzonym w 2021 roku - tegorocznym absolwentom szkół średnich - od przedszkola tłumaczono czym jest klimat również dzięki działaniom lokalnych samorządów, które podjęły wszelkie możliwe w ramach swoich kompetencji działania. </li>
-
-<li>4. Media wzięły na siebie odpowiedzialność za uświadamianie społeczeństwa o bezpośrednich zagrożeniach związanych z kryzysem klimatycznym. Nie ma ważniejszego tematu od ochrony klimatu i adaptacji do jego zmian. Dziennikarze i dziennikarki posługują się językiem odzwierciedlającym wagę problemu.</li>
-
-<li>5. Parlament RP powołał ekspercką i niezależną Radę Klimatyczną, której zadaniem było opracowanie strategii osiągnięcia neutralności klimatycznej Polski do roku 2040 oraz kontrola realizacji tej strategii. Ustawa ta była szeroko dyskutowana i ostatecznie uzyskała aprobatę środowiska naturalnego oraz strony społecznej (po maksymalnie transparentnych konsultacjach).</li>
-
-<li>6. Młodzi ludzie w Polsce i na całym świecie protestowali dla klimatu alarmując nie tylko o potrzebie redukcji emisji, czy ochronie różnorodności, ale także podkreślając potrzebę sprawiedliwego przeprowadzania trudnych zmian systemowych. Władze na szczeblach lokalnym, ogólnopolskim i międzynarodowym podjęły natychmiastowe działania, dzięki którym w listopadzie 2040 roku jesteśmy świadkami sprawiedliwej transformacji gospodarki w celu redukcji emisji gazów cieplarnianych. Zmiany systemowe, które mają miejsce, są dokonywane z uwzględnieniem praw i potrzeb wszystkich, których dotykają ich skutki - szczególnie osób zatrudnionych w sektorach energetyki, rolnictwa, przemysłu i transportu.</li>
-</ol>
-<p><b>Taki scenariusz wygląda w porządku. Niestety, nasi rządzący nie zajmują się naszą przyszłością w ogóle, a jeśli już się nią zajmują - robią to zbyt powierzchownie. </b></p>
-<p><b>Ta treść wydaje Ci się znajoma? Spoko, nam także, bo często ją powtarzamy w mediach, rozmowach, piszemy  na banerach, w social mediach, krzyczymy na protestach. Apelujemy o to do decydentów od dawna. To <a href="https://msk.earth/postulaty">postulaty Młodzieżowego Strajku Klimatycznego</a>. 
-    </b></p>
+                    <li>W 2040 roku polityka klimatyczna jest prowadzona w oparciu o aktualne i wciąż aktualizowane stanowisko nauki. Na dzień dzisiejszy najważniejsze jest dla nas jego ujęcie w najnowszych raportach Międzynarodowego Zespołu ds. Zmian Klimatu (IPCC) powołanego przez ONZ. </li>
+                    <li>Rząd polski już dawno uznał katastrofę klimatyczną poprzez ogłoszenie stanu kryzysu klimatycznego. Zdaniem osób decyzyjnych kwestia kryzysu nie mogła być przedmiotem ideologicznych sporów - w obliczu katastrofy musieliśmy przecież mówić wspólnym głosem, ponad podziałami. </li>
+                    <li>Młodzież domagająca się zawarcia kompleksowej oraz aktualnej wiedzy o mechanizmach kryzysu klimatycznego w podstawie programowej na wszystkich szczeblach edukacji doczekała się tych zmian. Kadrze nauczycielskiej zapewniono obowiązkowe szkolenia w tym zakresie  Urodzonym w 2021 roku - tegorocznym absolwentom szkół średnich - od przedszkola tłumaczono, czym jest klimat. Udało się to również dzięki działaniom lokalnych samorządów, które podjęły wszelkie możliwe w ramach swoich kompetencji działania. </li>
+                    <li>Media wzięły na siebie odpowiedzialność za uświadamianie społeczeństwa o bezpośrednich zagrożeniach związanych z kryzysem klimatycznym. Nie ma ważniejszego tematu od ochrony klimatu i adaptacji do jego zmian. Dziennikarze i dziennikarki posługują się językiem odzwierciedlającym wagę problemu.</li>
+                    <li>Parlament RP powołał ekspercką i niezależną Radę Klimatyczną, której zadaniem było opracowanie strategii osiągnięcia neutralności klimatycznej Polski do roku 2040 oraz kontrola realizacji tej strategii. Ustawa ta była szeroko dyskutowana i ostatecznie uzyskała aprobatę środowiska naturalnego oraz strony społecznej (po maksymalnie transparentnych konsultacjach).</li>
+                    <li>Młodzi ludzie w Polsce i na całym świecie protestowali dla klimatu, alarmując nie tylko o potrzebie redukcji emisji czy ochronie różnorodności, ale także podkreślając potrzebę sprawiedliwego przeprowadzania trudnych zmian systemowych. Władze na szczeblach lokalnych, ogólnopolskim i międzynarodowym podjęły natychmiastowe działania, dzięki którym od listopada 2040 roku jesteśmy świadkami sprawiedliwej transformacji gospodarki w celu redukcji emisji gazów cieplarnianych. Zmiany systemowe, które mają miejsce, są dokonywane z uwzględnieniem praw i potrzeb wszystkich, których dotykają ich skutki - szczególnie osób zatrudnionych w sektorach energetyki, rolnictwa, przemysłu i transportu.</li>
+                </ol>
+                <p><b>To jest SPRAWIEDLIWY 2040. Taka może być Polska, ale musimy zacząć działać.</b></p>
+                <p><b>Postulaty-marzenia jeszcze się nie zrealizowały, ale ciągle o nie zabiegamy - więcej na <a href="https://www.msk.earth/postulaty">naszej stronie - msk.earth</a>.</b></p>
             </div>
             </section>
 
         <section class="contact-section" id="contact">
             <h1>Kontakt</h1>
-            <p>insta: @msk.poznan</p>
-            <p>fb: @msk.poznan</p>
+            <h2>Młodzieżowy Strajk Klimatyczny</h2>
+            <a href="https://www.facebook.com/msk.polska" class="social-icon-link">
+                <img src="./icons/facebook.svg" class="social-icon"/>
+            </a>
+            <a href="https://www.instagram.com/mlodziezowystrajkklimatyczny/" class="social-icon-link">
+                <img src="./icons/instagram.svg" class="social-icon"/>
+            </a>
+            <a href="https://twitter.com/msklimatyczny" class="social-icon-link">
+                <img src="./icons/twitter.svg" class="social-icon"/>
+            </a>
+            <a href="https://www.msk.earth" class="social-icon-link">
+                <img src="./icons/www.svg" class="social-icon"/>
+            </a>
+            <h2>Młodzieżowy Strajk Klimatyczny - Poznań</h2>
+            <a href="https://www.facebook.com/mskpoznan" class="social-icon-link">
+                <img src="./icons/facebook.svg" class="social-icon"/>
+            </a>
+            <a href="https://www.instagram.com/msk.poznan/" class="social-icon-link">
+                <img src="./icons/instagram.svg" class="social-icon"/>
+            </a>
         </section>
 </main>
 </div>
 <footer>Młodzieżowy Strajk Klimatyczny - Poznań &copy; 2020</footer>
+<script type="module" src="counter.js"></script>
 <script type="module" src="init.js"></script>
 <script type="module" src="menu.js"></script>
 </body>

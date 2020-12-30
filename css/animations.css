@@ -35,6 +35,14 @@ section.start-section * {
   animation: fadeIn 0.45s ease-in;
 }
 
+section.counter-section {
+  animation: none;
+}
+
+section.counter-section * {
+  animation: fadeIn 0.25s ease-in;
+}
+
 @media (min-width: 992px) {
   .menu-closed {
     left: -100vw;
