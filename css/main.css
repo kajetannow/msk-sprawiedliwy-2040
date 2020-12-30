@@ -158,6 +158,7 @@ section p {
 section li {
   font-size: 1.266em;
   margin-bottom: 1.266em;
+  word-break: break-all;
 }
 
 section h1 {
@@ -407,13 +408,12 @@ p a:hover, li a:hover, figcaption a:hover {
 
 .content-img {
   width: 100%;
-  border-radius: 0.5vmax;
-  margin-bottom: 1em;
+  border-radius: 1vmax;
 }
 
 .social-icon-link {
   display: inline-block;
-  border-radius: 0.5em;
+  border-radius: 1vmax;
   background-color: #FFFFFF;
   width: 4em;
   height: 4em;

@@ -157,6 +157,7 @@ section{
     li{
         font-size: 1.266em;
         margin-bottom: 1.266em;
+        word-break: break-all;
     }
     
     h1{
@@ -389,13 +390,12 @@ p a, li a, figcaption a{
 }
 .content-img{
     width: 100%;
-    border-radius: 0.5vmax;
-    margin-bottom: 1em;
+    border-radius: 1vmax;
 }
 .social-icon-link{
     display: inline-block;
     //border: 0.2em solid $yellow;
-    border-radius: 0.5em;
+    border-radius: 1vmax;
     background-color: $white;
     width: 4em;
     height: 4em;
