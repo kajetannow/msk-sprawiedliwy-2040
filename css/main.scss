@@ -157,7 +157,6 @@ section{
     li{
         font-size: 1.266em;
         margin-bottom: 1.266em;
-        word-break: break-all;
     }
     
     h1{
@@ -313,6 +312,11 @@ section{
         color: $yellow;
     }
 }
+.bibliography-section{
+    li{
+        word-break: break-all;
+    }
+}
 .contact-section{
     min-height: auto;
 }
@@ -418,8 +422,12 @@ figcaption{
 //SMALL SMARTPHONES
 @media (max-width: 355px){
     .logo{
-       
         font-size: 1.4em;
+    }
+    .start-section{
+        h1{
+            font-size: 2.4em;
+        }
     }
 }
 
