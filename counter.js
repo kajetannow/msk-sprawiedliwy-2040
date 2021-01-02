@@ -4,7 +4,7 @@ let section = document.querySelector('.counter-section');
 
 
 function getTimeToGo(){
-    const PUBLIC_DATE = new Date(2021,0,6,7,0);
+    const PUBLIC_DATE = new Date(2021,0,8,7,0);
     //const PUBLIC_DATE = new Date(2020,0,6,7,0);
     let now = new Date();
     now = Date.now();

@@ -450,6 +450,16 @@ figcaption{
     html{
         font-size: 100%;
     }
+    .menu{
+        display: flex;
+        ul {
+            align-self: center;
+        }
+    }
+    .lang-container{
+        margin: 5em 0 auto auto;
+    }
+    
 
     section{
         p, li{
