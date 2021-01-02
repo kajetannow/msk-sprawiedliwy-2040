@@ -56,7 +56,7 @@ class Translator {
       }
 
     config = {
-        availableLangs: ['pl', 'en'],
+        availableLangs: ['pl', 'en', 'ua', 'de'],
         defaultLang: 'pl'
     }
 
