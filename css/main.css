@@ -280,6 +280,10 @@ section h1 {
   color: #FFF06B;
 }
 
+.neutrality-section .p-2040 b, .transformation-section .p-2040 b, .education-section .p-2040 b {
+  color: #FFF06B;
+}
+
 .law-section, .energetics-section {
   background-color: #8C51A5;
   color: #FFF06B;
@@ -463,6 +467,9 @@ figcaption {
     width: 50ch;
     max-width: 50vw;
     text-align: justify;
+  }
+  section p:first-of-type {
+    text-indent: 4ch;
   }
   .start-section h1 {
     font-size: 4em;

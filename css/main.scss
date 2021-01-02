@@ -268,6 +268,9 @@ section{
     .p-2040{
         background-color: $light-violet;
         color: $yellow;
+        b{
+            color: $yellow;
+        }
     }
 }
 
@@ -453,6 +456,9 @@ figcaption{
             width: 50ch;
             max-width: 50vw;
             text-align: justify;   
+        }
+        p:first-of-type{
+            text-indent: 4ch;
         }
     }
     .start-section{
