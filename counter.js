@@ -33,7 +33,7 @@ function setChanges(){
     let timeToGo = getTimeToGo();
     if(timeToGo>0){
         display.innerText=formatTime(timeToGo);
-        //main.style.display="none";
+        main.style.display="none";
     }else{
         main.style.display="";
         display.parentNode.style.display="none";
